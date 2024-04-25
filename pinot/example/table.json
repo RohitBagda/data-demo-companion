@@ -17,12 +17,12 @@
 
     "starTreeIndexConfigs": [{
       "dimensionsSplitOrder": [
-        "venueid"
+        "customerid"
       ],
       "skipStarNodeCreationForDimensions": [
       ],
       "functionColumnPairs": [
-        "SUM__capacity"
+        "DISTINCTCOUNT__eventid"
       ],
       "maxLeafRecords": 10
     }],
@@ -36,7 +36,7 @@
     "loadMode": "MMAP",
     "streamConfigs": {
       "streamType": "kafka",
-      "stream.kafka.topic.name": "data-demo-events",
+      "stream.kafka.topic.name": "data-demo-tickets",
       "stream.kafka.broker.list": "broker-1:9092",
       "stream.kafka.consumer.type": "lowlevel",
       "stream.kafka.consumer.prop.auto.offset.reset": "smallest",

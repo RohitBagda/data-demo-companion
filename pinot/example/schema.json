@@ -6,8 +6,8 @@
       "dataType": "INT"
     },
     {
-      "name": "capacity",
-      "dataType": "LONG"
+      "name": "price",
+      "dataType": "DOUBLE"
     }
   ],
   "dimensionFieldSpecs": [
@@ -16,21 +16,15 @@
       "dataType": "STRING"
     },
     {
-      "name": "artistid",
+      "name": "eventid",
       "dataType": "STRING"
     },
     {
-      "name": "venueid",
+      "name": "customerid",
       "dataType": "STRING"
     }
   ],
   "dateTimeFieldSpecs": [
-    {
-      "name": "eventdate",
-      "dataType": "STRING",
-      "format": "1:DAYS:SIMPLE_DATE_FORMAT:yyyy-MM-dd",
-      "granularity": "1:DAYS"
-    },
     {
       "name": "timestamp",
       "dataType": "TIMESTAMP",
