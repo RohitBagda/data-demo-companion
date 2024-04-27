@@ -1,0 +1,1 @@
+EXPLAIN PLAN FOR SELECT customerId, DISTINCT_COUNT_HLL(eventid) FROM foo group by 1 order by customerid;
