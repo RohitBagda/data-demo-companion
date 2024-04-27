@@ -1,2 +1,1 @@
-EXPLAIN PLAN FOR SELECT DISTINCTCOUNT(eventid) FROM foo;
--- SELECT DISTINCTCOUNT(eventid) FROM foo;
+EXPLAIN PLAN FOR SELECT customerId, DISTINCT_COUNT_HLL(eventid) FROM foo group by 1 order by customerid;

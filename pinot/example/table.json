@@ -22,7 +22,7 @@
       "skipStarNodeCreationForDimensions": [
       ],
       "functionColumnPairs": [
-        "DISTINCTCOUNT__eventid"
+        "DISTINCT_COUNT_HLL__eventid"
       ],
       "maxLeafRecords": 10
     }],
