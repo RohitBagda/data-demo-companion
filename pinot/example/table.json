@@ -16,14 +16,9 @@
   "tableIndexConfig": {
 
     "starTreeIndexConfigs": [{
-      "dimensionsSplitOrder": [
-        "customerid"
-      ],
-      "skipStarNodeCreationForDimensions": [
-      ],
-      "functionColumnPairs": [
-        "DISTINCT_COUNT_HLL__eventid"
-      ],
+      "dimensionsSplitOrder": ["customerid"],
+      "skipStarNodeCreationForDimensions": [],
+      "functionColumnPairs": ["DISTINCT_COUNT_HLL__eventid"],
       "maxLeafRecords": 10
     }],
 
@@ -42,7 +37,7 @@
       "stream.kafka.consumer.prop.auto.offset.reset": "smallest",
       "stream.kafka.consumer.factory.class.name": "org.apache.pinot.plugin.stream.kafka20.KafkaConsumerFactory",
       "stream.kafka.decoder.class.name": "org.apache.pinot.plugin.stream.kafka.KafkaJSONMessageDecoder",
-      "realtime.segment.flush.threshold.rows": "5000"
+      "realtime.segment.flush.threshold.rows": "200"
     },
     "noDictionaryColumns": [],
     "onHeapDictionaryColumns": [],
