@@ -1,3 +1,8 @@
+/*
+Business Question: Who are the highest selling artists in terms of event revenue and what is the average ticket price, 
+maximum ticket price, total number of tickets sold and total number of events for each artist
+*/
+
 SELECT
     a.name as artist_name,
     DISTINCTCOUNT(e.id) as total_events,

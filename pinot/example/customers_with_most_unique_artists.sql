@@ -1,3 +1,8 @@
+/*
+Business Question: Finds Top 3 customers with the highest number of unique artists. 
+Description: We will find the top 3 customers with the highest number of unique artists as well as the list of unique artists for those customers.
+*/
+
 WITH
     -- Find the top customer ids and unique artist count for each customer and limit to top 3.
     topCustomers AS (
